@@ -1,6 +1,7 @@
   robot = require("robot")
   LEBO = true
   bool = false
+  block = "Нашел блок перед собой";
   function RAM()
  computer = require("computer")
  free_mem = computer.freeMemory()
@@ -44,7 +45,7 @@ up, oo = robot.detectUp()
 end
 function  detect_left()
 left()
-d_left,kkl   =    robot.detect()
+d_left,kkl   =    detect()
 right()
 return d_left
 end
@@ -77,18 +78,33 @@ end
   tt= false
 function  Main()
 RAM();
--- tt= false
---detect()
---if pr == true then
---wr("Нашел блок, ломаю его")
---use_LEFT()
---else
---wr("Блок не найден, иду дальше")
---move() 
-if d_left== true then
+
+ tt= false
+detect()
+if pr == true then
+wr("Нашел блок, ломаю его")
 use_LEFT()
+else
+wr("Блок не найден, ищу рядом с собой блоки")
+detect_left()
+detect_right()
+if d_left == true then 
+left()
+wr(block)
+move()
 end
- 
+if d_right == true then 
+right()
+wr(block.."_")
+move()
+end
+
+--move() 
+--if d_left== true then
+--use_LEFT()
+--end
+
+end
 end
 --while tt == false do
 Main();
