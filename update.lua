@@ -1,5 +1,5 @@
  event = require("event")
- fs = require("filesystem")
+ filesystem = require("filesystem")
  component = require("component")
  computer = require("computer")
  event = require("event")
@@ -14,31 +14,33 @@
  colors = require("colors")
  local com = require("component")
 local internet = com.internet
-  wget = loadfile("/bin/wget.lua")
-  wget("https:\\ya.ru","/s")
-----  res, response = internet.request("https:\\ya.ru");
+filesystem.remove("/files.t")
+local wget = loadfile("/bin/wget.lua")
 
---function  get_value()
---local content = ""
---  res, response = pcall(internet.request("https:\\ya.ru"));
---for chunk in res do 
---content = content .. chunk 
---end
---return content
---end
---var = serial.unserialize(content)
---print (var.."|||");
---function  get_request(url)
---if url == nil then 
---url = ""
---  internet.request("http:\\"..url, data )
---  return data
---end
+     url = "https://raw.githubusercontent.com/oleg-19952008/for_github/master/for_github/files_list.t";
+ wget(url,"/files.t")
 
---return req
---end
---function req__ ()
---  otvet =  get_request("yandex.ru")
---print (otvet);
---end
---req__();
+-- end
+function  del_all_lua(args)
+local  line ;
+ local variable; adr  = "/files.t"
+for line in io.lines(adr) do
+filesystem.remove("/"..line)
+end
+end
+del_all_lua()
+ function  get_update() 
+  adr  = "/files.t"
+ for line in io.lines(adr) do  
+ 
+ print(line)
+ adrs =" https://raw.githubusercontent.com/oleg-19952008/for_github/master/for_github/"
+ line_ = line  
+ line = adrs .. line
+   wget( line ,"/"..line_)
+
+ end
+ end
+ get_update()
+
+
