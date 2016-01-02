@@ -89,6 +89,9 @@ RAM();
 
  tt= false
 detect()
+
+detect_UP()
+detect_Down()
 if pr == true then
 wr("Нашел блок, ломаю его")
 use_LEFT()
@@ -111,13 +114,11 @@ if d_left ~= true or d_right~= true then
 use_LEFT()
 end
 end
-move()
+
 --move() 
 --if d_left== true then
 --use_LEFT()
 --end
-detect_UP()
-detect_Down()
 if up ==true then 
 wr("Над мной блок, ломаю его ")
 use_LEFT_UP()
@@ -126,6 +127,7 @@ if down == true then
 wr("Под мной мной блок, ломаю его ")
 use_LEFT_DOWN()
 end
+move()
 end
  
 while tt == false do
