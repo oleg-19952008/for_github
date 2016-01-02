@@ -85,7 +85,7 @@ RAM();
 --else
 --wr("Блок не найден, иду дальше")
 --move() 
-if detect_left== true then
+if d_left== true then
 use_LEFT()
 end
  
