@@ -98,7 +98,9 @@ right()
 wr(block.."_")
 move()
 end
-
+if d_left ~= true and d_right~= true then
+move()
+end
 --move() 
 --if d_left== true then
 --use_LEFT()
@@ -106,9 +108,9 @@ end
 
 end
 end
---while tt == false do
+while tt == false do
 Main();
---end
+end
 
 
 
