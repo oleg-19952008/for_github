@@ -32,7 +32,7 @@ end
  function detect()
   -- Возвращает true если что-то может препятствовать движению робота
  pr, prip =   robot.detect()
- return
+ return pr
 end
  function detect_Down()
 down, pp =  robot.detectDown()
@@ -44,7 +44,7 @@ up, oo = robot.detectUp()
 end
 function  detect_left()
 left()
-d_left , ss  = detect()
+d_left   = detect()
 right()
 return d_left
 end
