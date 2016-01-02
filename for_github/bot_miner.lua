@@ -90,9 +90,9 @@ use_LEFT()
 end
  
 end
-while tt == false do
+--while tt == false do
 Main();
-end
+--end
 
 
 
