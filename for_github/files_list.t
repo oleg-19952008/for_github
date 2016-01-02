@@ -1,3 +1,4 @@
+bl.lua
 bot_miner.lua
 bot_miner_wifi.lua
 bot_miner_wif_bk.lua
