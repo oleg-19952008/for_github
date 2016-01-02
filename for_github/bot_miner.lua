@@ -63,9 +63,11 @@ end
 -- end
 function  use_LEFT_UP()
 robot.swingUp()
+return
 end
 function  use_LEFT_DOWN()
 robot.swingDown()
+return
 end
  function use_LEFT()
  local a  = robot.swing()
