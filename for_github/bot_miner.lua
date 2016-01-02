@@ -44,7 +44,7 @@ up, oo = robot.detectUp()
 end
 function  detect_left()
 left()
-d_left   = detect()
+d_left,kkl   =    robot.detect()
 right()
 return d_left
 end
