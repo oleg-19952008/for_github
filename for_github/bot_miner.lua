@@ -56,14 +56,22 @@ m = go()
 Main()
 return
 end 
+function  wr(s)
+print(s)
+s= nil;
+end
   tt= false
 function  Main()
+RAM();
  tt= false
 detect()
 if pr == true then
+wr("Нашел блок, ломаю его")
 use_LEFT()
 else
-move()
+wr("Блок не найден, иду дальше")
+move() 
+
 end
  
 end
