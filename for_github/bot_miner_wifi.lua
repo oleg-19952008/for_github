@@ -76,7 +76,6 @@ robot.turnAround()
 return
 end
 function go()
- robot.forward()
  no_move, sd = robot.forward()
 return no_move , sd
 end
@@ -97,10 +96,10 @@ end
  robot.detectUp()
  return
 end
-  function use_LEFT() -- robot.use([side: number[, sneaky: boolean[, duration: number]]]): boolean[, string]
- robot.use()
- return
- end
+--  function use_LEFT() -- robot.use([side: number[, sneaky: boolean[, duration: number]]]): boolean[, string]
+-- robot.use()
+-- return
+-- end
  function use_LEFT()
  local a  = robot.swing()
   return a
