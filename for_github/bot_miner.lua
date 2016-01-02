@@ -57,7 +57,7 @@ Main()
 return
 end  
 function  Main()
- 
+ tt= false
 detect()
 if pr == true then
 use_LEFT()
@@ -66,4 +66,6 @@ move()
 end
  
 end
+if tt == false then
 Main();
+end
