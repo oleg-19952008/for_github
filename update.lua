@@ -14,6 +14,7 @@
  colors = require("colors")
  local com = require("component")
 local internet = com.internet
+print("Updater libs from github")
 filesystem.remove("/files.t")
 local wget = loadfile("/bin/wget.lua")
 
