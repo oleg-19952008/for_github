@@ -110,6 +110,7 @@ end
 if d_left ~= true or d_right~= true then
 use_LEFT()
 end
+end
 move()
 --move() 
 --if d_left== true then
@@ -126,7 +127,7 @@ wr("Под мной мной блок, ломаю его ")
 use_LEFT_DOWN()
 end
 end
-end
+ 
 while tt == false do
 Main();
 end
