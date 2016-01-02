@@ -55,7 +55,8 @@ print("Я топаю")
 m = go()
 Main()
 return
-end  
+end 
+  tt= false
 function  Main()
  tt= false
 detect()
