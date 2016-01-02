@@ -57,13 +57,13 @@ Main()
 return
 end  
 function  Main()
-function  l()
+ 
 detect()
 if pr == true then
 use_LEFT()
 else
 move()
 end
-end
+ 
 end
 Main();
