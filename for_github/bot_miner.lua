@@ -35,13 +35,27 @@ end
  return
 end
  function detect_Down()
- robot.detectDown()
+down, pp =  robot.detectDown()
  return
 end
  function detect_UP()
- robot.detectUp()
+up, oo = robot.detectUp()
  return
 end
+function  detect_left()
+left()
+d_left , ss  = detect()
+right()
+return d_left
+end
+
+function  detect_right()
+right()
+d_right , dda  = detect()
+left()
+return d_right
+end
+
 --  function use_LEFT() -- robot.use([side: number[, sneaky: boolean[, duration: number]]]): boolean[, string]
 -- robot.use()
 -- return
@@ -63,18 +77,22 @@ end
   tt= false
 function  Main()
 RAM();
- tt= false
-detect()
-if pr == true then
-wr("Нашел блок, ломаю его")
+-- tt= false
+--detect()
+--if pr == true then
+--wr("Нашел блок, ломаю его")
+--use_LEFT()
+--else
+--wr("Блок не найден, иду дальше")
+--move() 
+if detect_left== true then
 use_LEFT()
-else
-wr("Блок не найден, иду дальше")
-move() 
-
 end
  
 end
 while tt == false do
 Main();
 end
+
+
+
