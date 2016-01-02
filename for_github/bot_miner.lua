@@ -67,6 +67,6 @@ move()
 end
  
 end
-if tt == false then
+while tt == false do
 Main();
 end
