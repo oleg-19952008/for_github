@@ -37,11 +37,11 @@ end
 end
  function detect_Down()
 down, pp =  robot.detectDown()
- return
+ return down
 end
  function detect_UP()
 up, oo = robot.detectUp()
- return
+ return up
 end
 function  detect_left()
 left()
