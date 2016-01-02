@@ -96,6 +96,8 @@ else
 wr("Блок не найден, ищу рядом с собой блоки")
 detect_left()
 detect_right()
+detect_UP()
+detect_Down()
 if d_left == true then 
 left()
 wr(block)
