@@ -90,7 +90,11 @@ d__,set_block_ =  robot.place()--robot.place([side: number[, sneaky: boolean]]):
 function  Main()
 set_block()
 if set_block_== true then 
-move()
+back()
 end
 end
+while  true do
+
+
 Main()
+end
