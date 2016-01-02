@@ -120,6 +120,8 @@ if down == true then
 wr("Под мной мной блок, ломаю его ")
 use_LEFT_DOWN()
 end
+end
+end
 while tt == false do
 Main();
 end
