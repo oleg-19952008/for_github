@@ -21,7 +21,7 @@ local wget = loadfile("/bin/wget.lua")
  wget(url,"/files.t")
 
 -- end
-function  del_all_lua(args)
+function  del_all_lua()
 local  line ;
  local variable; adr  = "/files.t"
 for line in io.lines(adr) do
