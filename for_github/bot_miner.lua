@@ -61,6 +61,12 @@ end
 -- robot.use()
 -- return
 -- end
+function  use_LEFT_UP()
+robot.swingUp()
+end
+function  use_LEFT_DOWN()
+robot.swingDown()
+end
  function use_LEFT()
  local a  = robot.swing()
   return a
@@ -106,8 +112,13 @@ move()
 --if d_left== true then
 --use_LEFT()
 --end
-
+if up ==true then 
+wr("Над мной блок, ломаю его ")
+use_LEFT_UP()
 end
+if down == true then
+wr("Под мной мной блок, ломаю его ")
+use_LEFT_DOWN()
 end
 while tt == false do
 Main();
